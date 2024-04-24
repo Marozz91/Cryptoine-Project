@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptonite</title>
+  <link rel="icon" href="assets/images/Bitcoin-PNG-Background.png">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="jquery-3.7.0.js"></script>
+
+  <!-- Our Script -->
+  <script src="script.js"></script>
+  <!-- <script src="data.js"></script> -->
+
+  <!-- Our Style -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="parallax"></div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+
+
+      <div class="container-fluid">
+
+
+        <a class="navbar-brand" href=""> <img src="assets/images/Bitcoin-PNG-Background.png" class="pointer" alt="logo"
+            width="60"> Cryptonite</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link pointer active" data-page="coins">Coins</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link pointer disabled" data-page="liveReports">Live Reports</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link pointer" data-page="about">About</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input id="searchBox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchBtn" class="btn btn-outline-dark" type="button">Search</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
+    <main>
+
+      <!-- Ajax -->
+      <div class="container cry-page active" id="coins">
+
+        <div id="cardContainer" class="loader_wrap row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 ">
+          <div class="loader_wrap">
+            <span class="loader"></span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="noInfo">
+
+        <p>There is no info..</p>
+
+      </div>
+
+
+      <!-- Bonus -->
+      <div class="container cry-page" id="liveReports">
+
+
+      </div>
+
+
+      <div class="container cry-page" id="about">
+        <div class="aboutContainer"></div>
+
+      </div>
+
+
+      <div data-bs-backdrop="static" class="modal fade" id="listModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">You have already selected 5 Coins. Do you want to
+                swap one of them?</h1>
+              <button type="button" class="btn-close close-me" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body"></div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-me" data-bs-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    </main>
+
+</body>
+
+</html>
