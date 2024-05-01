@@ -1,4 +1,4 @@
-## link to project
+## Link to project
 - https://marozz91.github.io/Cryptoine-Project/
 
 # Crypto Currency Project
